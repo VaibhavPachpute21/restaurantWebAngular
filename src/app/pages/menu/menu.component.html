@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 mt-5" *ngFor="let fd of foodData">
+            <div class="box">
+                <img src="{{fd.image}}" width="100%">
+                <p>{{fd.details}}</p>
+                <a class="btn" [routerLink]="['/menu',fd.id]">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 mt-5" *ngFor="let fd of foodData">
+            <div class="box">
+                <img src="{{fd.image}}" width="100%">
+                <p>{{fd.details}}</p>
+                <a class="btn" [routerLink]="['/menu',fd.id]">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</div>

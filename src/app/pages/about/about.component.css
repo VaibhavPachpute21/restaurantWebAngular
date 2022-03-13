@@ -1,0 +1,7 @@
+.container{
+    flex: content;
+    height: max-content;
+}
+.box{
+    height: max-content;
+}

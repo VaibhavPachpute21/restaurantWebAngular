@@ -1,0 +1,20 @@
+.navbar{
+    background-color: blue;
+}
+
+.nav-item .nav-link{
+    color: white;
+}
+
+.navbar-brand{
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-item .nav-link:hover{
+    text-decoration: underline;
+    font-weight: bold;   
+}
+
+

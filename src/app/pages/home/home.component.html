@@ -1,0 +1,48 @@
+<div class="banner">
+    <div class="bannerContents">
+        <h1 class="mb-5">Fresh Coocked Food<br> At Your Door</h1>
+        <button class="btn " routerLink="menu">ORDER NOW<i class="bi bi-arrow-right"></i></button>
+    </div>
+</div>
+
+<div class="container-fluid mt-5 mb-5">
+    <h1 class="text-center mb-5">
+        how to get fresh food
+    </h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="stepBox">
+                <h1>1</h1>
+                <p>Select food</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p>Fill the details</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p>your food order within minute</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let f of food">
+            <div class="box">
+                <img src="{{f.image}}" width="100%">
+                <h1>{{f.name}}</h1>
+                <h3>{{f.price}}</h3>
+            </div>
+        </div>
+    </div>
+    <button class="btn mb-5" routerLink="menu">View more<i class="bi bi-arrow-right"></i></button>
+</div>
+
