@@ -1,48 +1,81 @@
-<div class="banner">
-    <div class="bannerContents">
-        <h1 class="mb-5">Fresh Coocked Food<br> At Your Door</h1>
-        <button class="btn " routerLink="menu">ORDER NOW<i class="bi bi-arrow-right"></i></button>
-    </div>
-</div>
-
-<div class="container-fluid mt-5 mb-5">
-    <h1 class="text-center mb-5">
-        how to get fresh food
-    </h1>
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="stepBox">
-                <h1>1</h1>
-                <p>Select food</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="stepBox">
-                <h1>2</h1>
-                <p>Fill the details</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="stepBox">
-                <h1>3</h1>
-                <p>your food order within minute</p>
-            </div>
+<section id="casouel">
+    <div class="banner">
+        <img src="../../../assets/background.jpg" width="100%" height="650px">
+        <div class="bannerContents">
+            <h1 class="mb-2">Fresh Coocked Food<br> At Your Door</h1>
+            <button class="btn btn-dark" routerLink="menu">ORDER NOW<i class="bi bi-arrow-right"></i></button>
         </div>
     </div>
-</div>
+</section>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-3" *ngFor="let f of food">
-            <div class="box">
-                <img src="{{f.image}}" width="100%">
-                <h1>{{f.name}}</h1>
-                <h3>{{f.price}}</h3>
+
+<!-- Food ordering steps -->
+<section>
+    <div class="container-fluid mt-5 mb-2" style="background-color: aliceblue;">
+        <h1 class="text-center mb-5" style="color: black;">
+            How To Get Fresh Food
+        </h1>
+
+        <div class="row">
+            <div class="col-lg-4 ">
+                <div class="stepBox mb-2">
+                    <h1>1</h1>
+                    <p>Select food</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="stepBox mb-2">
+                    <h1>2</h1>
+                    <p>Fill the details</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="stepBox mb-2">
+                    <h1>3</h1>
+                    <p>get your food order within minute</p>
+                </div>
             </div>
         </div>
     </div>
-    <button class="btn mb-5" routerLink="menu">View more<i class="bi bi-arrow-right"></i></button>
-</div>
+</section>
 
+<!-- some food items -->
+<section>
+    <div class="container-fluid mb-5" style="background-color: aliceblue;">
+        <div class="row">
+            <h1 class="text-center">Menu</h1>
+            <div class="col-lg-3" *ngFor="let f of food">
+                <div class="box mb-2">
+                    <img src="{{f.image}}" width="100%" style="border-radius: 1px;">
+                    <h1 class="text-center" style="color: black;">{{f.name}}</h1>
+                    <h3 class="text-center" style="color: black;">at only {{f.price}}</h3>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-dark mb-5 mt-2" routerLink="menu">View more<i class="bi bi-arrow-right"></i></button>
+    </div>
+</section>
+
+<!-- visit us section -->
+<section id="visit us">
+    <div class="container-fluid visit">
+        <div class="row">
+            <div class="col-lg-5">
+                <img src="https://images.getbento.com/accounts/14fe9d5152238a35546e97a694b63353/media/images/13507THREE_PIECE_SUIT.jpg?w=1200&fit=max&auto=compress,format"
+                    width="100%">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="text-center">Visit Us</h1>
+                <a href="" style="text-decoration: none;"><p class="text-center">Shaitan Galli,<br>Khatra Mahal,<br>Andher Nagar,<br>Shamshan ke saamne</p></a>
+                <h5 class="text-center mt-2">Sunday-Thursday</h5>
+                <h6 class="text-center"><b>8:30 am - 10:00 pm</b></h6>
+                <h5 class="text-center mt-3">Friday&Saturday</h5>
+                <h6 class="text-center"><b>8:30 am - 12:00 pm</b></h6>
+
+            </div>
+        </div>
+    </div>
+
+</section>

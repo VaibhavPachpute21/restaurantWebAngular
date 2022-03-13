@@ -1,29 +1,24 @@
-.banner{
-    background-image: url('../../../assets/background1.jpg');
-    height: 600px;
-    background-position: center top;
-    background-size: cover;
+.banner img{
+    overflow: hidden;
+    background-position: center;
+    object-fit: cover;
+    object-position: center;
 
 }
 
 .bannerContents{
-   
-    position: relative;
+    overflow: hidden;
+    position: absolute;
     top: 30%;
     color: white;
     padding-left: 10%;
     font-size: 50px;
 }
 
-.btn{
-    background-color: rgb(10, 133, 248);
-    color: white;
-}
-
 .btn:hover{
-
-    color: black;
-    background-color: white;
+    
+    background-color: green;
+   
 }
 
 .stepBox{
@@ -37,5 +32,57 @@
 
 .box{
     background-color: white;
+    opacity: .8;
     padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.stepBox h1{
+    color: green;
+}
+
+.stepBox p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+.visit{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(240, 240, 240, 0.788);
+    padding: 10px 10px;
+    
+}
+
+.visit p{
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width:600px) {
+    .banner img{
+        height: 600px;
+        background-position: center;
+        object-fit: cover;
+        object-position: center;
+        background-color: rgba(0, 0, 0, 0.712);
+        opacity: 0.7;
+        
+        
+    }
+    .bannerContents{
+        background-color: rgba(0, 0, 0, 0.692);
+        width: 100%;
+        position: absolute;
+        padding-top: 10px;
+        top: 35%;
+        color: white;
+        padding-left: 10px;
+        font-size: 50px;
+    }
+        
 }
